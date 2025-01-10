@@ -9,73 +9,99 @@
 </head>
 
 <body>
-    <header class="header-main">
-        <div class="header-start">
-            <div class="logo">
-                <img src="assets/img/logo.png" alt="logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li class="dropdown"><a href="#">About</a><i id="arrowDropDown" class="arrow down"></i>
-                        <ul class="dropdown-content">
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Setting</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="header-link">
+    <div class="mobile-panel">
+        <div class="menu">
             <ul>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/instagram.svg" alt="instagram">
-                    </a>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">About<i id="arrowDropDown" class="arrow down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="assets/img/telegram.svg" alt="telegram">
-                    </a>
-                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Setting</a></li>
             </ul>
         </div>
-    </header>
-    <div class="container">
-        <section id="home">
-            <div class="text">
-                <h1>Lorem ipsum dolor sit</h1>
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, </h2>
+    </div>
+    <div class="page-shadow">
+        <header class="header-main">
+            <div class="header-start">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown"><a href="#">About</a><i id="arrowDropDown" class="arrow down"></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">lorem</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Setting</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="elsa">
-                <img src="assets/img/bg.jpg" alt="">
+            <div class="header-link">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/img/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/img/telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <section id="about">
-        </section>
-        <section id="addCartCat">
-            <h2>Добавити кота</h2>
-            <form class="addCatForm" id="addCatForm">
-                <label for="title">Назва:</label>
-                <input type="text" id="title" name="title" placeholder="Назва кота" required>
+            <div class="humburger">
+                <button type="button" class="menu-btn"><span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <div class="container">
+            <section id="home">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, </h2>
+                </div>
+                <div class="photo-home">
+                    <img src="assets/img/bg.jpg" alt="">
+                </div>
+            </section>
+            <section id="about">
+            </section>
+            <section id="addCartCat">
+                <h2>Добавити кота</h2>
+                <form class="addCatForm" id="addCatForm">
+                    <label for="title">Назва:</label>
+                    <input type="text" id="title" name="title" placeholder="Назва кота" required>
 
-                <label for="description">Опис:</label>
-                <textarea id="description" name="description" placeholder="Опис кота" required></textarea>
+                    <label for="description">Опис:</label>
+                    <textarea id="description" name="description" placeholder="Опис кота" required></textarea>
 
-                <label for="price">Ціна:</label>
-                <input type="number" id="price" name="price" placeholder="Ціна кота" required>
+                    <label for="price">Ціна:</label>
+                    <input type="number" id="price" name="price" placeholder="Ціна кота" required>
 
-                <label for="image">Завантажити зображення:</label>
-                <input type="file" id="image" name="image" accept="image/*" required>
+                    <label for="image">Завантажити зображення:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
 
-                <button type="submit">Додати кота</button>
-            </form>
-        </section>
+                    <button type="submit">Додати кота</button>
+                </form>
+            </section>
+        </div>
     </div>
     <script type="module" src="assets/js/addCartCat.js"></script>
     <script type="module" src="assets/js/main.js"></script>

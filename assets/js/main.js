@@ -93,3 +93,14 @@ form.addEventListener('submit', async (event) => {
     }
 });
 
+
+
+let mobilePanel = document.querySelector('.mobile-panel')
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function () {
+    mobilePanel.classList.toggle('show-mobile-panel')
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+  
+})
